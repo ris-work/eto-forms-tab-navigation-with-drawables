@@ -1,0 +1,105 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Rishi\\source\\repos\\EtoDrawableFocusabilityTest\\EtoDrawableFocusabilityTest.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Rishi\\source\\repos\\EtoDrawableFocusabilityTest\\EtoDrawableFocusabilityTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Rishi\\source\\repos\\EtoDrawableFocusabilityTest\\EtoDrawableFocusabilityTest.csproj",
+        "projectName": "EtoDrawableFocusabilityTest",
+        "projectPath": "C:\\Users\\Rishi\\source\\repos\\EtoDrawableFocusabilityTest\\EtoDrawableFocusabilityTest.csproj",
+        "packagesPath": "C:\\Users\\Rishi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rishi\\source\\repos\\EtoDrawableFocusabilityTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Rishi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net10.0-windows10.0.17763.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net10.0-windows10.0.17763": {
+            "targetAlias": "net10.0-windows10.0.17763.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net10.0-windows10.0.17763": {
+          "targetAlias": "net10.0-windows10.0.17763.0",
+          "dependencies": {
+            "Eto.Forms": {
+              "target": "Package",
+              "version": "[2.10.0, )"
+            },
+            "Eto.Platform.Gtk": {
+              "target": "Package",
+              "version": "[2.10.0, )"
+            },
+            "Eto.Platform.Windows": {
+              "target": "Package",
+              "version": "[2.10.0, )"
+            },
+            "Eto.Platform.Wpf": {
+              "target": "Package",
+              "version": "[2.10.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+              "version": "[10.0.100-preview.3.25201.16, 10.0.100-preview.3.25201.16]"
+            },
+            {
+              "name": "Microsoft.Windows.SDK.NET.Ref",
+              "version": "[10.0.17763.57, 10.0.17763.57]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Windows.SDK.NET.Ref.Windows": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100-preview.3.25201.16/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
