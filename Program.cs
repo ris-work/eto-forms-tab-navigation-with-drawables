@@ -23,7 +23,9 @@ Drawable MakeBox(int number, Color color)
         BackgroundColor = Colors.Transparent,
         MinimumSize = new Size(140, 120),
         Tag = number,
-        TabIndex = number
+        //Following: demonstrates that TabIndex is not necessary to receive keyboard focus.
+        //TabIndex = number,
+        
     };
     System.Console.WriteLine(d.ControlObject.GetType());
 
@@ -53,7 +55,9 @@ Drawable MakeBox(int number, Color color)
 
     if(d.ControlObject is System.Windows.Forms.Control x){
         System.Console.WriteLine("Cast as Control");
-        x.TabIndex = number;
+        //x.TabIndex = number;
+        //TabStop is important, otherwise things won't stop there.
+        x.TabStop = true;
     }
 
     // Each box listens for its own KeyUp
