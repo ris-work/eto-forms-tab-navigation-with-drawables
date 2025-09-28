@@ -2,12 +2,12 @@
 using Eto.Drawing;
 using Eto.Forms;
 using System.Reflection;
-Thread.CurrentThread.SetApartmentState(ApartmentState.Unknown);
-Thread.CurrentThread.SetApartmentState(ApartmentState.STA);
+//Thread.CurrentThread.SetApartmentState(ApartmentState.Unknown);
+//Thread.CurrentThread.SetApartmentState(ApartmentState.STA);
 
 Console.WriteLine("Hello, World!");
 
-
+AppContext.SetSwitch("System.Drawing.EnableUnixSupport", true);
 
 var app = new Application(Eto.Platforms.WinForms);
 var form = new Form

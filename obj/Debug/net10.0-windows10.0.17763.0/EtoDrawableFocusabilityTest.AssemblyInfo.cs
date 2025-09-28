@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EtoDrawableFocusabilityTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+53e697b0dcad2590a718a33265bd0c522199d73c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b3736c2a2dfc0c9fd0d45a823e8992d8307de829")]
 [assembly: System.Reflection.AssemblyProductAttribute("EtoDrawableFocusabilityTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EtoDrawableFocusabilityTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
