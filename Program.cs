@@ -16,6 +16,59 @@ var form = new Form
     ClientSize = new Size(640, 400)
 };
 
+
+
+FontFamily fam = FontFamilies.Sans;
+var rnd = new Random();
+Color[] palette = { Colors.AliceBlue, Colors.SteelBlue, Colors.Coral, Colors.MediumSeaGreen, Colors.Plum, Colors.Gold, Colors.LightGrey };
+
+TextBox[] GenTextBoxes(int n, string prefix = "V") =>
+    Enumerable.Range(1, n).Select(i =>
+        new TextBox { Width = 200, BackgroundColor = palette[rnd.Next(palette.Length)], Font = new Font(fam, 10f), Text = $"{prefix}{i}" })
+    .ToArray();
+
+TextArea[] GenTextAreas(int n, string prefix = "T") =>
+    Enumerable.Range(1, n).Select(i =>
+        new TextArea { Width = 200, Height = 60, BackgroundColor = palette[rnd.Next(palette.Length)], Font = new Font(fam, 11f), Text = $"{prefix}{i}" })
+    .ToArray();
+
+Button[] GenButtons(int n, string prefix = "T") =>
+    Enumerable.Range(1, n).Select(i =>
+        new Button { Width = 200, Height = 60, BackgroundColor = palette[rnd.Next(palette.Length)], Font = new Font(fam, 11f), Text = $"{prefix}{i}" })
+    .ToArray();
+
+StackLayout GenMixedLayout(int tbCount, int taCount, int perRow = 2)
+{
+    var tbs = GenTextBoxes(tbCount, "TB");
+    var bs = GenButtons(tbCount, "TB");
+    var tas = GenTextAreas(taCount, "TA");
+    var max = Math.Max(tbs.Length, tas.Length);
+    var items = Enumerable.Range(0, max * 3)
+        .Select(i =>
+        {
+            var idx = i / 3;
+            return (Control)(i % 3 == 0 ? (idx < tbs.Length ? tbs[idx] : new Label())
+                                : i % 3 == 1 ? (idx < tas.Length ? tas[idx] : new Label())
+                                : (idx < bs.Length ? bs[idx] : new Label()));
+        })
+        .ToArray();
+
+    var outer = new StackLayout { Orientation = Orientation.Vertical, Spacing = 6 };
+    for (int i = 0; i < items.Length; i += perRow)
+    {
+        var row = new StackLayout { Orientation = Orientation.Horizontal, Spacing = 6 };
+        foreach (var c in items.Skip(i).Take(perRow)) row.Items.Add(c);
+        outer.Items.Add(row);
+    }
+    return outer;
+}
+
+// Examples:
+var boxesT = GenTextBoxes(4);
+var areas = GenTextAreas(2);
+var mixed = GenMixedLayout(3, 2, perRow: 3);
+var mixed2 = GenMixedLayout(3, 2, perRow: 3);
+var mixed3 = GenMixedLayout(3, 2, perRow: 3);
 Drawable MakeBox(int number, Color color)
 {
     var d = new Drawable
@@ -52,6 +105,7 @@ Drawable MakeBox(int number, Color color)
         e.Graphics.DrawRectangle(Colors.Black, rect);
         e.Graphics.DrawText(SystemFonts.Bold(14), Colors.White, rect.Left + 10, rect.Top + 10, $"Box {number}");
     };
+    d.Content = GenMixedLayout(4, 4, 3);
 
     if(d.ControlObject is System.Windows.Forms.Control x){
         System.Console.WriteLine("Cast as Control");
@@ -89,7 +143,7 @@ var stack1 = new StackLayout
 {
     Orientation = Orientation.Horizontal,
     Spacing = 10,
-    Items = { boxes[0], boxes[1] }
+    Items = { boxes[0], boxes[1], mixed }
 };
 
 var stack2 = new StackLayout

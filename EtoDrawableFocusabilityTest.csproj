@@ -8,10 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Eto.Forms" Version="2.10.0" />
-    <PackageReference Include="Eto.Platform.Gtk" Version="2.10.0" />
-    <PackageReference Include="Eto.Platform.Windows" Version="2.10.0" />
-    <PackageReference Include="Eto.Platform.Wpf" Version="2.10.0" />
+    <PackageReference Include="Eto.Forms" Version="2.9.0-dev" />
+    <PackageReference Include="Eto.Platform.Gtk" Version="2.9.0-dev" />
+    <PackageReference Include="Eto.Platform.Wpf" Version="2.9.0-dev" />
+	  <PackageReference Include="Rishi.Eto.Platform.Core.WinForms" Version="2.9.0-dev" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--<ProjectReference Include="..\EtoWinformsCanFocus\src\Eto\Eto.csproj" />-->
+    <!--<ProjectReference Include="..\EtoWinformsCanFocus\src\Eto.WinForms\Eto.WinForms.csproj" />-->
   </ItemGroup>
 
 </Project>
