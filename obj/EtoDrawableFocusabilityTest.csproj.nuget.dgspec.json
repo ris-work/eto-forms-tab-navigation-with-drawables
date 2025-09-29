@@ -22,7 +22,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net10.0-windows10.0.17763.0"
+          "net10.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -30,8 +30,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net10.0-windows10.0.17763": {
-            "targetAlias": "net10.0-windows10.0.17763.0",
+          "net10.0": {
+            "targetAlias": "net10.0",
             "projectReferences": {}
           }
         },
@@ -48,24 +48,24 @@
         "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
-        "net10.0-windows10.0.17763": {
-          "targetAlias": "net10.0-windows10.0.17763.0",
+        "net10.0": {
+          "targetAlias": "net10.0",
           "dependencies": {
             "Eto.Forms": {
               "target": "Package",
-              "version": "[2.10.0, )"
+              "version": "[2.9.0-dev, )"
             },
             "Eto.Platform.Gtk": {
               "target": "Package",
-              "version": "[2.10.0, )"
+              "version": "[2.9.0-dev, )"
             },
-            "Eto.Platform.Windows": {
+            "Rishi.Eto.Platform.Core.WinForms": {
               "target": "Package",
-              "version": "[2.10.0, )"
+              "version": "[2.8.0.13-dev, )"
             },
-            "Eto.Platform.Wpf": {
+            "System.Drawing.Common": {
               "target": "Package",
-              "version": "[2.10.0, )"
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
@@ -83,17 +83,10 @@
             {
               "name": "Microsoft.Net.Sdk.Compilers.Toolset",
               "version": "[10.0.100-preview.3.25201.16, 10.0.100-preview.3.25201.16]"
-            },
-            {
-              "name": "Microsoft.Windows.SDK.NET.Ref",
-              "version": "[10.0.17763.57, 10.0.17763.57]"
             }
           ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            },
-            "Microsoft.Windows.SDK.NET.Ref.Windows": {
               "privateAssets": "all"
             }
           },

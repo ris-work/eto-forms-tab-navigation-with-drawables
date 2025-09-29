@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Rishi\\source\\repos\\EtoDrawableFocusabilityTest\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{69B3436F-8687-407C-9A59-E492DACA9964}|EtoDrawableFocusabilityTest.csproj|c:\\users\\rishi\\source\\repos\\etodrawablefocusabilitytest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69B3436F-8687-407C-9A59-E492DACA9964}|EtoDrawableFocusabilityTest.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69B3436F-8687-407C-9A59-E492DACA9964}|EtoDrawableFocusabilityTest.csproj|c:\\users\\rishi\\source\\repos\\etodrawablefocusabilitytest\\etodrawablefocusabilitytest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{69B3436F-8687-407C-9A59-E492DACA9964}|EtoDrawableFocusabilityTest.csproj|solutionrelative:etodrawablefocusabilitytest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,32 +30,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EtoDrawableFocusabilityTest.csproj",
-              "DocumentMoniker": "C:\\Users\\Rishi\\source\\repos\\EtoDrawableFocusabilityTest\\EtoDrawableFocusabilityTest.csproj",
-              "RelativeDocumentMoniker": "EtoDrawableFocusabilityTest.csproj",
-              "ToolTip": "C:\\Users\\Rishi\\source\\repos\\EtoDrawableFocusabilityTest\\EtoDrawableFocusabilityTest.csproj",
-              "RelativeToolTip": "EtoDrawableFocusabilityTest.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-17T17:02:19.51Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Rishi\\source\\repos\\EtoDrawableFocusabilityTest\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Rishi\\source\\repos\\EtoDrawableFocusabilityTest\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADkAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T16:58:37.739Z",
-              "EditorCaption": ""
             }
           ]
         }
